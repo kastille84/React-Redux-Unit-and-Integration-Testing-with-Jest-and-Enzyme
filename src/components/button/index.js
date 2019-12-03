@@ -9,7 +9,7 @@ class SharedButton extends Component {
         }
     }
     render() {
-        const {buttonText, emitEvent} = this.props;
+        const {buttonText} = this.props;
         return (
             <button 
                 data-test="buttonComponent"
