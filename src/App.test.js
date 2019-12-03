@@ -38,4 +38,18 @@ describe("App Component", () => {
         expect(component.length).toBe(1);
     })
 
+    it('exampleMethod_updateState Method should update the hideBtn state  as expected', ()=> {
+        //create an instance of the class
+        const classInstance = wrapper.instance();
+        //trigger that method
+        classInstance.exampleMethod_updateState();
+        //see what that state is
+        const newState = classInstance.state.hideBtn;
+        expect(newState).toBe(true);
+    })
+    it('exampleMethod_returnsAValue should return a value as expected', () => {
+        const classInstance = wrapper.instance();
+        const newValue = classInstance.exampleMethod_returnsAValue(3);
+        expect(newValue).toBe(4);
+    })
 })
